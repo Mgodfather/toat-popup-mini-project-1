@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+        <form class="form-conatiner">
+            <select name="" id="rl">
+                <option id="left" value="left">Left</option>
+                <option id="right" value="right">Right</option>
+            </select>
+            <select name="" id="tb">
+                <option id="top" value="top">top</option>
+                <option id="bottom" value="bottom">bottom</option>
+            </select>
+            <select name="" id="messages">
+                <option value="success">success</option>
+                <option value="warning">warning</option>
+                <option value="error">error</option>
+                <option value="info">info</option>
+            </select>
+            <input type="text" id="input-message" value="This is a toast message!">
+
+            <div class="duration-container">
+                <span>duration</span>
+                <input type="range" id="duration" min="10">
+            </div>
+
+            <button type="submit">show toast</button>
+        </form>
+    </main>
+
+    <div class="all-toasts bottom">
+    </div>
+
+</body>
+
+</html>
